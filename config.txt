@@ -325,7 +325,7 @@ network.webserver.enable                     true             # Enable the webse
 network.telnet.enable                        true             # Enable the telnet server
 #network.ip_address                           auto             # Use dhcp to get ip address
 # Uncomment the 3 below to manually setup ip address
-network.ip_address                           192.168.178.222   # The IP address, Rosenwerk: 192.168.0.222
+network.ip_address                           192.168.0.222   # The IP address, Rosenwerk: 192.168.0.222
 network.ip_mask                              255.255.255.0   # The ip mask
 network.ip_gateway                           192.168.0.1     # The gateway address
 #network.mac_override                         xx.xx.xx.xx.xx.xx  # Override the mac address, only do this if you have a conflict
