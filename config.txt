@@ -238,14 +238,19 @@ beta_homing_retract_mm                       5                # Distance to retr
 gamma_homing_retract_mm                      1                # Distance to retract from the endstop after it is hit for gamma/Z
 
 
-# Optional enable limit switches, actions will stop if any enabled limit switch is triggered (all are set for delta)
-#alpha_limit_enable                          false            # Set to true to enable X min and max limit switches
-#beta_limit_enable                           false            # Set to true to enable Y min and max limit switches
-#gamma_limit_enable                          false            # Set to true to enable Z min and max limit switches
+# # Soft endstops
+# soft_endstop.enable         true         # Enable soft endstops
+# soft_endstop.x_min          1            # Minimum X position
+# soft_endstop.x_max          999          # Maximum X position
+# soft_endstop.y_min          1            # Minimum Y position
+# soft_endstop.y_max          499          # Maximum Y position
+# soft_endstop.z_min          1            # Minimum Z position
+# soft_endstop.z_max          199          # Maximum Z position
+# soft_endstop.halt           true         # Whether to issue a HALT state when hitting a soft endstop (if false, will just ...
 
 # Optional order in which axis will home, default is they all home at the same time,
 # If this is set it will force each axis to home one at a time in the specified order
-#homing_order                                 XYZ              # X axis followed by Y then Z last
+homing_order                                 XY              # X axis followed by Y then Z last
 #move_to_origin_after_home                    false            # Move XY to 0,0 after homing
 #endstop_debounce_count                       100              # Uncomment if you get noise on your endstops, default is 100
 #endstop_debounce_ms                          1                # Uncomment if you get noise on your endstops, default is 1 ...
